@@ -71,7 +71,7 @@ services:
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
-      - AIRFLOW__CORE__FERNET_KEY=UKMzEm3yIuFYEq1y3-2FxPNWSVwRASpahmQ9kQfEr8Q=
+      - AIRFLOW__CORE__FERNET_KEY=UKMzEm3yIuFYEq1y3-2FxPNWSVwRASpahmQ9kQfEr8Q= #this is just a sample FERNET KEY, you must have real case into a .env
       - AIRFLOW__WEBSERVER__DEFAULT_USER_USERNAME=admin
       - AIRFLOW__WEBSERVER__DEFAULT_USER_PASSWORD=admin
     volumes:
